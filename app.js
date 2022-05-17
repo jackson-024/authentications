@@ -11,8 +11,8 @@ const AuthChecker = require('./middleware/AuthChecker')
 app.use(express.json())
 
 // register routes 
-app.use('/api/janta/authentication', auth)
-// app.use('api/janta', AuthChecker, users)
+app.use('/api/authentication', auth)
+app.use('api/', users)
 
 // Start server
 const port = 3000
